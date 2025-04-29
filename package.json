@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "clean": "git clean -xdf node_modules"
   },
   "keywords": [],
@@ -17,5 +18,7 @@
     "lefthook": "1.11.11",
     "vite": "6.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "reveal.js": "5.2.1"
+  }
 }
