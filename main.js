@@ -6,6 +6,9 @@ import 'reveal.js/dist/theme/league.css'
 // our styles to adjust the presentation
 import './styles.css'
 import Reveal from 'reveal.js'
+import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js'
 
-const deck = new Reveal()
-deck.initialize({ hash: true, slideNumber: true })
+const deck = new Reveal({
+  plugins: [Markdown],
+})
+deck.initialize()

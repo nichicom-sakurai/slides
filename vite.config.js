@@ -10,7 +10,8 @@ export default {
     rollupOptions: {
       input: {
         main: 'index.html',
-        about: 'about.html',
+        toronoba: 'toronoba.html',
+        mdSample: 'md-sample.html',
       },
     },
   },
