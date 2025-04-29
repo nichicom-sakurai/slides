@@ -1,12 +1,18 @@
 // vite.config.js
 export default {
-  base: "/slides/",
+  base: '/slides/',
   server: {
     port: 3000, // ポート3000
     open: true, // 起動時ブラウザ自動オープン
   },
   build: {
-    outDir: "docs", // ビルド出力先をdocsに設定
+    outDir: 'docs', // ビルド出力先をdocsに設定
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        about: 'about.html',
+      },
+    },
   },
-  publicDir: "public", // publicフォルダの内容を常にバンドルに含める
-};
+  publicDir: 'public', // publicフォルダの内容を常にバンドルに含める
+}

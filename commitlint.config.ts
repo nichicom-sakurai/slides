@@ -1,5 +1,5 @@
-import type { UserConfig } from '@commitlint/types';
-import { RuleConfigSeverity } from '@commitlint/types';
+import type { UserConfig } from '@commitlint/types'
+import { RuleConfigSeverity } from '@commitlint/types'
 
 // noinspection JSUnusedGlobalSymbols
 export default {
@@ -7,4 +7,4 @@ export default {
   rules: {
     'subject-case': [RuleConfigSeverity.Error, 'never', ['upper-case']],
   },
-} satisfies UserConfig;
+} satisfies UserConfig
