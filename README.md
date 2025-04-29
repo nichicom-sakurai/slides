@@ -35,3 +35,26 @@ $ bun run build
 ビルドすると `docs` ディレクトリに出力されます。出力されたファイルは自動的にGitHub Pagesにデプロイされ、以下のURLで公開されます:
 
 https://nichicom-sakurai.github.io/slides/
+
+## 新しいページの追加
+
+新しいHTMLページを追加した場合は、`vite.config.js`の`rollupOptions.input`に追加する必要があります：
+
+```js
+// vite.config.js
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        about: 'about.html',
+        // 新しいページを追加した場合はここに追記
+        // 例: newpage: 'newpage.html'
+      }
+    }
+  }
+})
+```
+
+これにより、ビルド時に新しいページがバンドルに含まれるようになります。
+
