@@ -22,7 +22,8 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["dist", "docs"]
+    "ignore": ["dist", "docs"],
+    "include": ["**/*.html", "**/*.js", "**/*.json", "**/*.ts"]
   },
   "organizeImports": {
     "enabled": true
