@@ -21,6 +21,22 @@
   ],
   "debug.openDebug": "openOnDebugBreak",
   "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
   "editor.rulers": [80],
@@ -43,14 +59,6 @@
     "readme.*": "authors, backers.md, changelog*, citation*, code_of_conduct.md, codeowners, contributing.md, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors.md",
     "index.html": "main.js,styles.css,*.html"
   },
-  "files.watcherExclude": {
-    "**/.fvm": true
-  },
   "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "search.exclude": {
-    "**/.fvm": true,
-    "**/*.freezed.dart": true,
-    "**/*.g.dart": true
-  }
+  "git.enableSmartCommit": true
 }
