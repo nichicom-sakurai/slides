@@ -36,6 +36,7 @@ $ bun run build
 
 https://nichicom-sakurai.github.io/slides/
 
+
 ## 新しいページの追加
 
 新しいHTMLページを追加した場合は、`vite.config.js`の`rollupOptions.input`に追加する必要があります：
@@ -57,4 +58,19 @@ export default defineConfig({
 ```
 
 これにより、ビルド時に新しいページがバンドルに含まれるようになります。
+
+## スライドの印刷方法
+
+Reveal.js のスライドをPDFとして印刷する場合は、スライドのURL末尾に `?print-pdf` を付与してアクセスしてください。
+
+例: [https://nichicom-sakurai.github.io/slides/sample.html?print-pdf](https://nichicom-sakurai.github.io/slides/sample.html?print-pdf)
+
+その後、ブラウザの印刷ダイアログ（`Ctrl+P` または `Cmd+P`）を開き、以下の設定を推奨します：
+- **送信先**: PDFに保存
+- **レイアウト**: 横向き（Landscape）
+- **余白**: なし
+- **背景のグラフィック**: 有効
+
+詳細な手順やオプションについては、Reveal.js公式ドキュメントもご参照ください。
+- [Reveal.js PDF Export 公式ガイド](https://revealjs.com/pdf-export/)
 
